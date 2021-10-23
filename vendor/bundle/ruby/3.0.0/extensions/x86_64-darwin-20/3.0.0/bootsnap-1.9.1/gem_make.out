@@ -1,0 +1,15 @@
+current directory: /Users/brandonczaja/Desktop/Udemy/Udemy_Ruby_On_Rails_With_RSpec/language_app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.9.1/ext/bootsnap
+/Users/brandonczaja/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/brandonczaja/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20211023-79062-cbi803.rb extconf.rb
+creating Makefile
+
+current directory: /Users/brandonczaja/Desktop/Udemy/Udemy_Ruby_On_Rails_With_RSpec/language_app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/brandonczaja/Desktop/Udemy/Udemy_Ruby_On_Rails_With_RSpec/language_app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/brandonczaja/Desktop/Udemy/Udemy_Ruby_On_Rails_With_RSpec/language_app/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.9.1/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20211023-79062-1tp1s/bootsnap
