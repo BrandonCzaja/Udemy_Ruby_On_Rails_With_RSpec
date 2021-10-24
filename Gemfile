@@ -6,7 +6,7 @@ ruby '2.7.2'
 
 # Video 4 he uses fn + f5 to order these alphabetically, I need extensions
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
-gem 'sqlite3', '~> 1.4'
+gem 'pg'
 gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
