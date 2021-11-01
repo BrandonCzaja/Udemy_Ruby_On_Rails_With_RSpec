@@ -7,6 +7,10 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
+# This is from here: https://www.youtube.com/watch?v=ef82mR9Mm8Q&t=524s
+# It is a flexible route for any support files. Anything from 'spec/support/<any_level_of_nested>/<any_file_ending_in.rb>' require that file
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each {|f| require f}
+
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end

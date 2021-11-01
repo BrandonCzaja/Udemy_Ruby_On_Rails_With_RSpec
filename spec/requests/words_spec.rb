@@ -4,8 +4,7 @@ RSpec.describe WordsController, type: :controller do
   describe "GET index" do
     context 'when some words are present' do
       it 'assigns @words' do
-        # Have to add value or validation causes test to fail
-        word = Word.create(value: 'cat', language: 'english')
+        word = create(:word) # :word is coming from ./factories/word.rb
         get :index
         expect(assigns(:words)).to eq([word])
       end
