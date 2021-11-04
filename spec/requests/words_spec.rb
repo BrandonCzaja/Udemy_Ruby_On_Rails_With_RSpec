@@ -25,6 +25,7 @@ RSpec.describe WordsController, type: :controller do
 
   describe 'GET new' do
     before {get :new}
+
     it 'assigns @word' do
       expect(assigns(:word)).to be_a_new(Word) 
     end
@@ -36,15 +37,25 @@ RSpec.describe WordsController, type: :controller do
 
   describe 'POST method' do
     subject {post :create, params: params }
-    let(:params) do
-      {word: {value: 'bird', language: 'english'}}
+
+    context 'valid params' do
+      let(:params) do
+        {word: {value: 'bird', language: 'english'}}
+      end
+
+      it 'creates new word' do
+        expect {subject}.to change(Word, :count).from(0).to(1)
+      end
     end
 
-    # Checking that the word is added to params, not the DB
-    it 'creates a new word' do
-      # binding.pry
-      expect{subject}.to change(Word, :count).from(0).to(1)
+    context 'invlaid params' do
+      let(:params) do
+        {word: {value: 'bird'}}
+      end
+
+      it 'does not create a new word' do
+        expect {subject}.not_to change(Word, :count)
+      end
     end
-  
   end 
 end

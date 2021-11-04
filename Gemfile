@@ -16,6 +16,8 @@ gem 'rspec'
 gem 'haml-rails', '~> 2.0'
 gem 'simple_form'
 gem 'rails-controller-testing'
+gem 'bootstrap', '~> 5.1.0'
+gem 'jquery-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
