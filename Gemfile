@@ -45,6 +45,7 @@ group :development do
   gem 'spring'
   gem 'rspec-rails'
   gem "factory_bot_rails"
+  gem 'pry', '~> 0.13.1'
 end
 
 group :test do
@@ -55,6 +56,7 @@ group :test do
   gem 'webdrivers'
    gem 'shoulda-matchers', '~> 5.0'
    gem "factory_bot_rails"
+   gem 'pry', '~> 0.13.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

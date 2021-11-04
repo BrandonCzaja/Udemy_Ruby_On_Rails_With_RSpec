@@ -8,6 +8,7 @@ class WordsController < ApplicationController
     end
 
     def create
+        # binding.pry
         @word = Word.new(word_params)
         if @word.save
             redirect_to(words_path)
