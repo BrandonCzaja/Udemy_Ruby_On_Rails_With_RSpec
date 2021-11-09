@@ -40,7 +40,7 @@ RSpec.describe WordsController, type: :controller do
 
     context 'valid params' do
       let(:params) do
-        {word: {value: 'bird', language: 'english'}}
+        {word: {content: 'bird', language: 'english'}}
       end
 
       it 'creates new word' do
@@ -50,7 +50,7 @@ RSpec.describe WordsController, type: :controller do
 
     context 'invlaid params' do
       let(:params) do
-        {word: {value: 'bird'}}
+        {word: {content: 'bird'}}
       end
 
       it 'does not create a new word' do
