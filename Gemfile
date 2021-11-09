@@ -18,6 +18,7 @@ gem 'simple_form'
 gem 'rails-controller-testing'
 gem 'bootstrap', '~> 5.1.0'
 gem 'jquery-rails'
+gem 'language_list', '~> 1.2', '>= 1.2.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
